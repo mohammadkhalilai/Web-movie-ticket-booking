@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --color-primary: rgb(248, 68, 101);
+  --color-primary-dull: #D63854;
+
+}
+*{
+ font-family: "Outfit", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #787777 #1e2e2e;
+
+}
+
+body{
+  color: white;
+  background-color: #090908;
+  margin: 0PX;
+  
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

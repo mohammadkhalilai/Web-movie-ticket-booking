@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" preserveAspectRatio="xMinYMid meet">
+
+  <!-- "M" in red -->
+  <text x="10" y="66" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="60" fill="#F84565">M</text>
+
+  <!-- "ovieGO" in white -->
+  <text x="50" y="66" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="60" fill="#FFFFFF">ovieGO</text>
+
+</svg>
