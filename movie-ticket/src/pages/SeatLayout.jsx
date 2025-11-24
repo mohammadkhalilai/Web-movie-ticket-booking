@@ -39,7 +39,8 @@ const SeatLayout = () =>{
       return toast("You can only select 5 seats")
     }
     setSelectedSeats(prev => prev.includes(seatId) ? prev.filter(seat => seat !== seatId) : [...prev, seatId])
-  }
+  }//prev previous state
+  // prev.include check if the seatId in the array  
 
  const renderSeats = (row, count = 9) => (
   <div key={row} className="flex gap-2 mt-2">

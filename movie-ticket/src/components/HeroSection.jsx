@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   const navigate = useNavigate() //allow to navigate using javascript inside the component
   
-  return(
+  return( 
     <div className='flex flex-col items-start justify-center gap4
     px-6 md:px-16 lg:px-36 bg-[url("/backgroundImage.png")]
     bg-cover bg-center h-screen'>
@@ -22,7 +22,7 @@ const HeroSection = () => {
         </div>
         <p className='max-w-md text-gray-300'>In a post-apocalyptic world where moving cities devour one another to survive, two people cross paths in London and attempt to uncover and stop a conspiracy.
         </p>
-        <button onClick={()=> navigate('/movies') } className='flex items-center gap-1 px-6
+        <button onClick={()=> (navigate('/movies'), scrollTo(0,0))} className='flex items-center gap-1 px-6
         py-3 text-sm bg-[var(--color-primary-dull)] hover:bg-[var(--color-primary)] transition rounded-full '>
           Explore Movies
           <ArrowRightIcon className='w-5 h-5'/>

@@ -18,7 +18,7 @@ const NavBar = () =>{
    <div className='fixed top-0 left-0 z-50 w-full flex items-center
     justify-between px-6 md:px-16 lg:px-36 py-5'>
     <Link to ='/'  className='max-md:flex-1'>
-    <img src={assets.movie} alt="Not Found" className=' w-45 h-auto'/>
+    <img src={assets.movie} alt="Not Found" className=' w-45 h-auto'/> 
     </Link>
      
     <div className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium
@@ -27,7 +27,7 @@ const NavBar = () =>{
     border-gray-300/20 overflow-hidden transition-[width] duration-300  ${isOpen ? 'max-md:w-full' : 'max-md:w-0'}`}> 
 
 
-      <XIcon className='md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer'
+      <XIcon className='md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer' 
       onClick={()=> setIsOpen(!isOpen)}/>
      <Link  onClick={()=> { setIsOpen(false)}} to='/' className='hover:text-[var(--color-primary-dull)] transition duration-400'>Home</Link>
      <Link  onClick={()=> { setIsOpen(false)}} to='/movies' className='hover:text-[var(--color-primary-dull)] transition duration-400'>Movies</Link>
@@ -46,7 +46,7 @@ const NavBar = () =>{
       cursor-pointer '>Login</button>
         ) : (
 
-          <UserButton>
+          <UserButton> 
             <UserButton.MenuItems>
               <UserButton.Action label='My Booking' labelIcon={<TicketPlus width={15}/>} onClick={()=> navigate('/my-bookings')}/>
             </UserButton.MenuItems>

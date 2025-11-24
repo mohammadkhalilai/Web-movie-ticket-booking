@@ -19,8 +19,8 @@ const getMyBookings = async () => {
   setIsLoading(false)
 }
 
-  useEffect(() => {
-    getMyBookings()
+  useEffect(() => { // to run the code at certain time but run it auto....
+    getMyBookings() // call getMyBookings then fil the bookings data and turn off the loading state.
   },[])
 
 

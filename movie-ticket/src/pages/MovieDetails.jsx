@@ -11,7 +11,7 @@ import Loading from "../components/Loading"
 
 const MovieDetailes = () =>{
   const navigate = useNavigate()
-  const {id} = useParams()
+  const {id} = useParams() // return object of all route parameters rewtun id
   const [show, setShow] = useState(null)
 
    const getShow = async ()=>{
@@ -25,9 +25,9 @@ const MovieDetailes = () =>{
     }
     
    }
-   useEffect(()=>{
+   useEffect(()=>{ // get show must run only when the component first load
       getShow()
-   },[id])
+   },[id]) //id run the effect every time id change
 
 
   return show ? (
